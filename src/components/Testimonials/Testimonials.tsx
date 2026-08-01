@@ -4,7 +4,7 @@ import Blogs from "../Blogs/Blogs";
 
 const Testimonials = () => {
   return (
-    <section className="mx-auto mt-10 max-w-7xl px-5">
+    <section id="testimonial" className="mx-auto mt-10 max-w-7xl px-5">
 
       <div className="flex flex-col gap-6 lg:flex-row">
 
