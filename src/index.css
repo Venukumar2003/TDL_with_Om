@@ -10,7 +10,7 @@ body {
   background: #f8fafc;
 }
 
-/* .active-nav {
+.active-nav {
   color: #2563eb;
   font-weight: 700;
   position: relative;
@@ -25,21 +25,4 @@ body {
   height: 3px;
   background-color: #2563eb;
   border-radius: 999px;
-} */
-
-.active-nav{
-    color:#2196f3;
-    font-weight:700;
-    position:relative;
-}
-
-.active-nav::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-10px;
-    width:100%;
-    height:3px;
-    background:#2196f3;
-    border-radius:20px;
 }

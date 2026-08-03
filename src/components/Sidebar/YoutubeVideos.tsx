@@ -2,12 +2,12 @@ import { youtubeVideos } from "./YoutubeData";
 
 const YoutubeVideos = () => {
     return (
-        <div className="rounded-2xl bg-white p-6 shadow-sm">
+        <div className="rounded-2xl bg-white p-4 sm:p-6 shadow-sm shadow-2xl hover:shadow-violet-500/30 hover:-translate-y-2 transition-all duration-500 ">
 
             {/* Header */}
             <div className="mb-8 flex items-center justify-between">
 
-                <h2 className="text-m font-bold text-violet-900">
+                <h2 className="text-2xl sm:text-xl font-bold text-violet-900">
                     Latest YouTube Videos
                 </h2>
 
@@ -18,7 +18,7 @@ const YoutubeVideos = () => {
             </div>
 
 
-            <div className="space-y-8">
+            <div className="space-y-4">
                 {youtubeVideos.map((video) => (
                     <a
                         key={video.id}
@@ -30,15 +30,15 @@ const YoutubeVideos = () => {
                         <img
                             src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`}
                             alt={video.title}
-                            className="h-20 w-28 rounded-lg object-cover"
+                            className="h-16 w-24 rounded-lg object-cover sm:h-20 sm:w-28"
                         />
 
                         <div className="flex-1">
-                            <h3 className="text-sm font-semibold leading-5 text-gray-800">
+                            <h3 className="text-xs font-semibold leading-5 sm:text-sm text-gray-800">
                                 {video.title}
                             </h3>
 
-                            <p className="mt-1 text-xs text-gray-500">
+                            <p className="mt-1 text-[11px] text-gray-500 sm:text-xs text-gray-500">
                                 {video.views}
                             </p>
 

@@ -4,7 +4,7 @@ import { blogs } from "./BlogData";
 
 const Blogs = () => {
   return (
-    <section id="blog" className="rounded-2xl bg-white p-3 shadow-sm">
+    <section id="blog" className="rounded-2xl bg-white p-3 shadow-sm shadow-2xl hover:shadow-violet-500/30 hover:-translate-y-2 transition-all duration-500">
 
       {/* Header */}
       <div className="mb-2 flex items-center justify-between">

@@ -1,87 +1,3 @@
-// import { useNavigate } from "react-router-dom";
-// import { FiSearch } from "react-icons/fi";
-// import { Link } from "react-scroll";
-// import { useState } from "react";
-
-// const navItems = [
-//     { name: "Home", id: "home" },
-//     { name: "Courses", id: "courses" },
-//     { name: "Free Resources", id: "freeResources" },
-//     { name: "Blog", id: "blog" },
-//     { name: "About", id: "contact" },
-//     { name: "Contact", id: "contact" },
-// ];
-
-// const Navbar = () => {
-//     const [search,setSearch] = useState("")
-
-//     const navigate = useNavigate();
-//     return (
-//         <header className="sticky top-0 z-50 bg-white shadow-sm">
-//             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-
-
-//                 <div className="text-2xl font-bold text-violet-700">
-//                     TDL with Om
-//                 </div>
-
-
-//                 <ul className="flex items-center gap-6 ml-48">
-//                     {navItems.map((item) => (
-//                         <li
-//                             key={item.name}
-//                             className="text-bold cursor-pointer text-sm font-medium text-gray-700 transition hover:text-violet-700"
-//                         >
-//                             <Link to={item.id}
-//                                 duration={500}
-//                                 offset={-80}
-//                                 className="cursor-pointer hover:text-violet-600 transition"
-//                                 activeClass="text-violet-700 font-semibold" >
-//                                 {item.name}
-
-//                             </Link>
-
-//                         </li>
-//                     ))}
-//                 </ul>
-
-//                 <div className="flex items-center gap-4">
-
-//                     <div className="flex items-center rounded-full border px-4 py-2">
-//                         <FiSearch className="mr-2 text-gray-500" />
-//                         <input
-//                             type="text"
-//                             name="search"
-//                             value={search}
-//                             placeholder="Search courses..."
-//                             onChange={(e)=>setSearch(e.target.value)}
-//                             className="outline-none"
-//                         />
-//                     </div>
-
-//                     <div className="flex items-center gap-3">
-                                                               
-//                         <button onClick={()=>navigate("/login")}
-//                          className="rounded-lg border px-4 py-2 text-sm font-medium hover:bg-gray-100 shadow hover:animation cursor-pointer">
-//                             Login
-//                         </button>
-                    
-//                         <button onClick={()=>navigate("/signup")} 
-//                         className="rounded-lg bg-violet-700 px-4 py-2 text-sm font-medium text-white hover:bg-violet-800 cursor-pointer">
-//                             Sign Up
-//                         </button>
-//                     </div>
-//                 </div>
-
-//             </div>
-//         </header>
-//     );
-// };
-
-// export default Navbar;
-
-
-
 
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -99,35 +15,35 @@ const navItems = [
 ];
 
 const Navbar = () => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg shadow-md border-b border-violet-100">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img
             src={logo}
             alt="Logo"
-            className="w-10 h-10 object-contain rounded-full"
+            className="w-10 h-10 object-contain rounded-full cursor-pointer"
           />
 
-          <h1 className="text-xl font-bold text-sky-500">
+          <h1 className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-violet-700 to-purple-600 bg-clip-text text-transparent">
             TDL WITH OM
           </h1>
         </div>
 
         {/* Menu */}
-        <ul className="flex items-center gap-8">
+        <ul className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
             <li key={item.id}>
               <Link
                 to={item.id}
                 duration={500}
-                offset={-80}
+                offset={-90}
                 activeClass="active-nav"
-                className="cursor-pointer text-[#3F4346] text-m font-medium hover:text-sky-500 transition"
+                className="cursor-pointer text-gray-700 text-[17px] font-semibold hover:text-violet-600 transition-all duration-300"
               >
                 {item.name}
               </Link>
@@ -139,17 +55,14 @@ const navigate = useNavigate();
         <div className="flex items-center gap-6">
 
           <div className="relative cursor-pointer">
-            <FaShoppingCart className="text-3xl text-blue-600" />
+            <FaShoppingCart className="text-2xl text-violet-700 hover:scale-110 transition duration-300" />
 
-            {/* <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
-              1
-            </span> */}
           </div>
 
-          <button onClick={()=>navigate("/login")} className="text-lg font-medium text-[#3F4346] hover:text-sky-500 cursor-pointer">
+          <button onClick={() => navigate("/login")} className="px-5 py-2 rounded-xl font-semibold text-violet-700 hover:bg-violet-50 cursor-pointer transition">
             Login
           </button>
-           <button onClick={()=>navigate("/signup")} className="text-lg font-medium text-[#3F4346] hover:text-sky-500 cursor-pointer">
+          <button onClick={() => navigate("/signup")} className="px-6 py-2 rounded-xl bg-gradient-to-r from-violet-700 to-purple-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
             SignUp
           </button>
 

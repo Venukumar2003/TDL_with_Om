@@ -14,7 +14,7 @@ const TestimonialCard = ({
   review,
 }: TestimonialCardProps) => {
   return (
-    <div className="rounded-2xl bg-white p-3 shadow-sm transition hover:-translate-y-1 hover:shadow-lg  ">
+    <div className="rounded-2xl bg-white p-3 shadow-sm transition hover:-translate-y-2 duration-500 hover:shadow-lg  ">
 
 
       <div className="flex items-center gap-4">

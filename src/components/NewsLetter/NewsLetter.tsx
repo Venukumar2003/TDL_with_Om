@@ -44,7 +44,7 @@ const Newsletter = () => {
             className="flex-1 rounded-full border-none bg-white px-6 py-3 text-sm outline-none"
           />
 
-          <button className="rounded-4xl bg-yellow-400 px-3 py-2 font-semibold text-violet-900 transition hover:bg-yellow-300">
+          <button className="rounded-4xl bg-yellow-400 px-3 py-2 font-semibold text-violet-900 transition hover:bg-yellow-300 cursor-pointer">
             Subscribe
           </button>
 

@@ -36,7 +36,6 @@ const FooterColumn = ({ title, items }: FooterColumnProps) => {
             <li key={item.id}>
               <Link
                 to={item.id}
-                // smooth={true}
                 duration={500}
                 offset={-80}
                 className="cursor-pointer text-sm text-violet-200 hover:text-white"

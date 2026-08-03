@@ -1,10 +1,9 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Offers from "./components/Offers/Offers";
-import BrowseCategories from "./components/Categories/BrowseCategories";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Newsletter from "./components/NewsLetter/NewsLetter";
 import Footer from "./components/Footer/Footer";
+import MainComponent from "./components/MainComponent/MainComponent";
 
 
 import Login from "./components/Login/Login";
@@ -16,14 +15,17 @@ import {Routes,Route} from "react-router-dom"
 function Home(){
   return (
     <>
-    
+    <div className="bg-gradient-to-b from-white via-violet-50 to-white">
+
+
+   
     <Navbar />
       <Hero />
-      <Offers />
-      <BrowseCategories />
+      <MainComponent />
       <Testimonials />
       <Newsletter />
       <Footer />
+       </div>
 </>
   )
 }

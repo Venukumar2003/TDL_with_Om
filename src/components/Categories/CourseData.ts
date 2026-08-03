@@ -25,6 +25,7 @@ import business1 from "../../assets/business1.jpeg"
 import business2 from "../../assets/business2.jpeg"
 import business3 from "../../assets/business3.png"
 import business4 from "../../assets/business4.png"
+
 export const tallyCourses = [
   {
     id: 1,

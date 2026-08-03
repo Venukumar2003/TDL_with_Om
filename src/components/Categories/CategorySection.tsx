@@ -8,9 +8,10 @@ interface CategorySectionProps {
 
 const CategorySection = ({ title, courses }: CategorySectionProps) => {
   return (
-    <section className="mt-1">
+    
+    <section>
 
-      <div className="mb-5 flex items-center justify-between">
+      <div className="mb-4 flex items-center justify-between">
 
         <h2 className="text-xl font-bold text-violet-900">
           {title}
@@ -18,7 +19,7 @@ const CategorySection = ({ title, courses }: CategorySectionProps) => {
 
         <div className="flex items-center gap-4">
 
-          <button className="text-sm font-semibold text-violet-700 cursor-pointer">
+          <button className="text-sm font-semibold text-violet-700 hover:text-violet-900 hover:bg-purple-200 rounded-lg p-1 cursor-pointer">
             View All
           </button>
 

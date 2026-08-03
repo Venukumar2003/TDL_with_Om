@@ -16,7 +16,7 @@ const CourseCard = ({
   lessons,
 }: CourseCardProps) => {
   return (
-    <div className="rounded-xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+    <div className="rounded-xl bg-white transition hover:shadow-lg overflow-hidden shadow-2xl hover:shadow-violet-500/30 hover:-translate-y-2 transition-all duration-500 ">
 
       <img
         src={image}
@@ -24,9 +24,9 @@ const CourseCard = ({
         className="h-40 w-full rounded-t-xl object-cover"
       />
 
-      <div className="p-4">
+      <div className="flex flex-1 flex-col p-4">
 
-        <h3 className="line-clamp-2 text-sm font-semibold">
+        <h3 className="min-h-[56px] text-sm font-semibold leading-6">
           {title}
         </h3>
 
@@ -44,7 +44,7 @@ const CourseCard = ({
           </span>
         </div>
 
-        <button className="mt-2 w-full rounded-lg bg-violet-700 py-2 text-sm font-medium text-white hover:bg-violet-800 cursor-pointer">
+        <button className="mt-2 w-full rounded-lg bg-violet-700 py-2 text-sm font-medium text-white hover:bg-violet-800 shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-150 cursor-pointer">
           View Course
         </button>
 
