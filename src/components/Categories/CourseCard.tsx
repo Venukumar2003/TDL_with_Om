@@ -44,7 +44,7 @@ const CourseCard = ({
           </span>
         </div>
 
-        <button className="mt-2 w-full rounded-lg bg-violet-700 py-2 text-sm font-medium text-white hover:bg-violet-800 shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-150 cursor-pointer">
+        <button className="mt-2 w-full rounded-lg bg-violet-700 py-2 text-sm font-medium text-white shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-150 cursor-pointer">
           View Course
         </button>
 
